@@ -14,20 +14,30 @@
       margin-left: auto
     &-menu
       padding-top: 22px
-      padding-bottom: 22px
+      padding-bottom: 23px
+      &__item
+        height: 15px
+        line-height: 15px
       &__link
         font-size: 12px
         line-height: 15px
   .search
+    margin-right: 73px
+    margin-left: 47.25px
     &__input
       width: 340px
-@media ( max-width: 768px)
+@media ( max-width: 767px)
   .container
     max-width: 576px
-    width: 92%
+    width: 320px
   .navbar
     &__search, &-menu, &__user
       display: none
+    &__search
+    &-top
+      height: 70px
+      padding-top: 28px
+      padding-bottom: 28px
   .menu
     &-button
       display: flex
