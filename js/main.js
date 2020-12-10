@@ -1,7 +1,7 @@
 var mySwiper = new Swiper('.swiper-container', {
   // Optional parameters
   loop: true,
-
+  
   // Navigation arrows
   navigation: {
     nextEl: '.slider-button--next',
@@ -9,9 +9,10 @@ var mySwiper = new Swiper('.swiper-container', {
   },
   keyboard: {
     enabled: true,
-  }
-
- var myMap;
+  },
+})
+// Yandex.Map
+var myMap;
 
 // Дождёмся загрузки API и готовности DOM.
 ymaps.ready(init);
@@ -22,12 +23,12 @@ function init () {
     myMap = new ymaps.Map('map', {
         // При инициализации карты обязательно нужно указать
         // её центр и коэффициент масштабирования.
-        center:[7.839145110780258, 98.29909090764404], //Пхукет
-        zoom:10
+        center:[7.83812217, 98.29887402], //Пхукет        
+        zoom:15
     });
 
     document.getElementById('destroyButton').onclick = function () {
         // Для уничтожения используется метод destroy.
         myMap.destroy();
     };
-})
+}
