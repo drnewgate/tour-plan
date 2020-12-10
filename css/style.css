@@ -1024,6 +1024,12 @@ template {
         flex-basis: 20%;
     margin-right: 6%;
   }
+  .hotel-grid {
+    margin-top: 18px;
+  }
+  .hotel__slider {
+    height: 179px;
+  }
   .booking {
     width: 100%;
     height: 210px;
@@ -1034,7 +1040,7 @@ template {
   }
   .map {
     width: 100%;
-    height: 210px;
+    height: 172px;
   }
 }
 /*# sourceMappingURL=style.css.map */
