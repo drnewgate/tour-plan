@@ -989,7 +989,7 @@ template {
 
 .reviews-slider__button {
   position: absolute;
-  top: 47%;
+  top: 44%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 30px;
@@ -1005,12 +1005,12 @@ template {
 
 .reviews-slider__button--prev {
   background-image: url(../img/arrow-prev-secondary.svg);
-  left: 0;
+  left: 15px;
 }
 
 .reviews-slider__button--next {
   background-image: url(../img/arrow-next-secondary.svg);
-  right: 0;
+  right: 15px;
 }
 
 .reviews-slider__profile {
@@ -1154,7 +1154,11 @@ template {
     width: 340px;
     height: 210px;
   }
+  .newsletter {
+    padding: 92px 0 93px 0;
+  }
   .reviews__title {
+    margin-bottom: 50px;
     font-size: 30px;
     line-height: 38px;
   }
