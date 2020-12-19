@@ -1255,6 +1255,12 @@ template {
   list-style: none;
 }
 
+.footer__ul__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .footer__title {
   font-style: normal;
   font-weight: bold;
@@ -1286,6 +1292,15 @@ template {
   margin-bottom: 20px;
 }
 
+.footer__item__list {
+  margin-right: 12px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+
 .footer__icon-wrapper {
   min-width: 40px;
 }
@@ -1301,7 +1316,6 @@ template {
 }
 
 .footer__input {
-  width: 255px;
   background: #FFFFFF;
   border-radius: 4px;
   border: none;
@@ -1345,6 +1359,21 @@ template {
   color: #E0E0E0;
 }
 
+.footer__payment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: auto;
+  margin-top: 95px;
+  width: 700px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1361,6 +1390,10 @@ template {
   .card {
     width: 230px;
     height: 230px;
+  }
+  .footer__input {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 
