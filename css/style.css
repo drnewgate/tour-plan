@@ -1307,7 +1307,12 @@ template {
 
 .footer__text {
   color: #BDBDBD;
+  margin-top: 0;
   margin-bottom: 22px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
 }
 
 .footer__link {
