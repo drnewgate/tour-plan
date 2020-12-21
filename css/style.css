@@ -1644,7 +1644,6 @@ template {
     margin-bottom: 20px;
   }
   .navbar-menu__item--mobile--visible {
-    height: 40px;
     display: block;
   }
   .navbar-top {
@@ -1682,7 +1681,7 @@ template {
   .user__name--light {
     color: #fff;
     margin-left: 0;
-    margin-bottom: 10px;
+    margin-top: 10px;
   }
   .stars {
     -ms-flex-preferred-size: 20%;
@@ -1786,6 +1785,9 @@ template {
 @media (max-width: 576px) {
   .logo {
     width: 99px;
+  }
+  .search__input {
+    width: 245px;
   }
   .hotel {
     padding-top: 0;
