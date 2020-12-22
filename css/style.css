@@ -390,6 +390,7 @@ template {
 
 .navbar-bottom {
   background-color: #0A223D;
+  overflow-y: auto;
 }
 
 .navbar-menu {
@@ -1348,8 +1349,11 @@ template {
 }
 
 .footer__input-fild {
-  width: 49.5%;
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1537,15 +1541,16 @@ template {
     height: 255px;
   }
   .footer-wrapper {
-    -ms-grid-columns: (1fr)[6];
-        grid-template-columns: repeat(6, 1fr);
-    grid-row-gap: 40px;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 51px;
   }
   .footer__input {
     -ms-flex-preferred-size: 49%;
         flex-basis: 49%;
   }
   .footer__logo {
+    width: 104px;
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
@@ -1584,6 +1589,7 @@ template {
   }
   .footer__payment {
     margin-top: 60px;
+    margin-left: 0;
     grid-column: span 6;
     -ms-grid-row: 5;
     grid-row: 5;
@@ -1603,7 +1609,7 @@ template {
     left: 0;
     top: 0;
     right: 0;
-    z-index: 99;
+    z-index: 100;
   }
   .navbar__user--mobile--hidden, .navbar__search--mobile--hidden {
     display: none;
@@ -1612,6 +1618,7 @@ template {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: 0;
   }
   .navbar__user {
     -webkit-box-orient: vertical;
@@ -1639,6 +1646,7 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 0;
   }
   .navbar-menu__item {
     margin-bottom: 20px;
@@ -1647,7 +1655,7 @@ template {
     display: block;
   }
   .navbar-top {
-    height: 70px;
+    height: 80px;
     padding-top: 28px;
     padding-bottom: 28px;
     line-height: 60px;
@@ -1828,6 +1836,7 @@ template {
   .footer-wrapper {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    row-gap: 30px;
   }
   .footer-wrapper__logo {
     -ms-grid-row: 1;
@@ -1890,6 +1899,7 @@ template {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    margin-right: 143px;
   }
 }
 

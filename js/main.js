@@ -25,9 +25,12 @@ var reviewsSlider = new Swiper('.reviews-slider', {
   },
 })
 
-var menuButton = document.querySelector(".menu-button");
-menuButton.addEventListener("click", function(){
-  console.log('Клик по кнопке меню')
-  document.querySelector('.navbar-bottom')
-  .classList.toggle('navbar-bottom--visible');
+const menuButton = $('.menu-button')
+  menuButton.on('click', function () {
+    const navbarBottom = $('.navbar-bottom')
+    navbarBottom.toggleClass('navbar-bottom--visible')
+    
+    navbarBottom.hasClass('navbar-bottom--visible')
+      ? document.body.style.overflow = 'hidden'
+      : document.body.style.overflow = ''
 });
