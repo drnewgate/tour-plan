@@ -371,11 +371,11 @@
         <div class="footer__social-network">
           <h3 class="footer__title footer__title--inline">Social Network</h3>
           <div class="footer__social-links">
-            <a href="#" class="footer__link">
+            <a href="https://www.facebook.com/"target="_blank" class="footer__link">
               <img src="img/facebook.svg" alt="Icon:Facebook"></a>
-            <a href="#" class="footer__link">
+            <a href="http://www.youtube.com/"target="_blank" class="footer__link">
               <img src="img/youtube.svg" alt="Icon:Youtube"></a>
-            <a href="#" class="footer__link">
+            <a href="https://instagram.com/"target="_blank" class="footer__link">
               <img src="img/instagram.svg" alt="Icon:Instagram"></a>
           </div>
           <!-- /.footer__social-links -->
@@ -411,34 +411,41 @@
                 <div class="footer__icon-wrapper">
                 <img class="footer__icon" src="img/contact-phone-call.svg" alt="icon: contact-phone-call">
                 </div>
-                Tel (business hours): 269 1500 <br>
-                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br>
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00
+                <div class="footer__telefone">
+                Tel (business hours): <a href="tel:269-1500" class="footer__link">269 1500</a> <br>
+                Tel (hotline) Monday - Saturday: <a href="tel:52-56-61-38" class="footer__link">52-56-61-38</a> (08:00 am – 20:00 pm) <br>
+                Tel (hotline) Sunday: <a href="tel:52-56-61-38" class="footer__link">52-56-61-38</a> (08:00 am – 14:00
                 pm)
+                </div>
+                <!-- /.footer__block -->
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
                   <img class="footer__icon" src="img/email.svg" alt="icon: email">
                 </div>
-                cherly.lawson@example.com
+                <a href="mailto:cherly.lawson@example.com" target="_blank" class="footer__link">cherly.lawson@example.com</a>
               </li>
             </ul>
           </div>
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-1">Send us a message</h3>
-            <form action="#" class="footer__form" >
+            <form action="send.php" method="POST" class="footer__form" >
               <div class="footer__input-fild">
               <input 
               type="text" 
-              class="input footer__input" placeholder="Your Full Name*" 
+              class="input footer__input" placeholder="Your Full Name*"
+              name="name" 
               />              
               <input 
               type="tel" 
               class="input footer__input" placeholder="Phone Number*" 
+              name="phone"
               />
               </div>
-              <textarea class="footer__message"  placeholder="Message"></textarea>
+              <textarea class="footer__message"  placeholder="Message"
+              name="message">
+            </textarea>
               <div class="footer__info footer-item">
               <button class="button footer__button" type="submit">Send</button>
               <span class="footer__info">* Required Fields</span>
