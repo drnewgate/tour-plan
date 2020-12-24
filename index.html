@@ -194,8 +194,9 @@
       <h2 class="newsletter-title newsletter-title">subscribe to our
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
-        <form action="#" class="subscribe newsletter__subscribe">
-          <input type="text" class="subscribe__input" placeholder="Your email address" />
+        <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
+          <input type="text" class="subscribe__input" placeholder="Your email address" 
+          name="email"/>
           <button class="subscribe__button">Send</button>
         </form>
     </div>
@@ -371,11 +372,11 @@
         <div class="footer__social-network">
           <h3 class="footer__title footer__title--inline">Social Network</h3>
           <div class="footer__social-links">
-            <a href="https://www.facebook.com/"target="_blank" class="footer__link">
+            <a href="https://www.facebook.com/" target="_blank" class="footer__link">
               <img src="img/facebook.svg" alt="Icon:Facebook"></a>
-            <a href="http://www.youtube.com/"target="_blank" class="footer__link">
+            <a href="http://www.youtube.com/" target="_blank" class="footer__link">
               <img src="img/youtube.svg" alt="Icon:Youtube"></a>
-            <a href="https://instagram.com/"target="_blank" class="footer__link">
+            <a href="https://instagram.com/" target="_blank" class="footer__link">
               <img src="img/instagram.svg" alt="Icon:Instagram"></a>
           </div>
           <!-- /.footer__social-links -->
@@ -444,8 +445,8 @@
               />
               </div>
               <textarea class="footer__message"  placeholder="Message"
-              name="message">
-            </textarea>
+              name="message"
+              ></textarea>
               <div class="footer__info footer-item">
               <button class="button footer__button" type="submit">Send</button>
               <span class="footer__info">* Required Fields</span>

@@ -2093,6 +2093,9 @@ template {
   .activities {
     padding-top: 40px;
   }
+  .footer {
+    padding-top: 67px;
+  }
   .footer-wrapper {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
