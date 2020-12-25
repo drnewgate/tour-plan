@@ -1481,6 +1481,9 @@ template {
     height: 15px;
     line-height: 15px;
   }
+  .navbar-menu__item-local {
+    margin-bottom: 39px;
+  }
   .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
@@ -2120,7 +2123,7 @@ template {
     margin-bottom: 13px;
   }
   .footer__title--mb-2 {
-    margin-top: 6px;
+    margin-top: 2px;
   }
   .footer__title--inline {
     margin-bottom: 22px;
@@ -2185,7 +2188,7 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 22px;
+    margin-top: 32px;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
