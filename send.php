@@ -31,11 +31,11 @@ try {
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'alekseibuhtin@mail.ru'; // Логин на почте
-    $mail->Password   = 'prometeus16499'; // Пароль на почте
+    $mail->Username   = 'simoshencko@yandex.ru'; // Логин на почте
+    $mail->Password   = 'kdpmc4569'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('alekseibuhtin@mail.ru', 'Алексей Бухтин'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('simoshencko@yandex.ru', 'Елена Симошенко'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('drnewgate@yandex.ru');  
