@@ -39,8 +39,6 @@ img {
   height: 123px;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
 }
 
 .button {
@@ -979,6 +977,7 @@ template {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  cursor: pointer;
 }
 
 .reviews {
@@ -1391,27 +1390,28 @@ template {
   background: #FFFFFF;
   border-radius: 4px;
   border: none;
-  -ms-flex-preferred-size: 47%;
-      flex-basis: 47%;
   padding: 0 23px;
   height: 50px;
+  display: block;
+  width: 100%;
 }
 
-.footer__input-fild {
+.footer__input-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.footer__input-fild {
+  width: 47%;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-}
-
-.footer__message {
-  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .footer__info {
@@ -1426,6 +1426,13 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #E0E0E0;
+}
+
+.footer .message {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .footer .footer-item {
@@ -1987,9 +1994,14 @@ template {
     grid-row-gap: 0px;
     grid-gap: 0px;
   }
-  .footer__input {
-    -ms-flex-preferred-size: 49%;
-        flex-basis: 49%;
+  .footer__input-fild {
+    width: 100%;
+  }
+  .footer__input-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .footer__logo {
     margin-top: 0;
@@ -2189,10 +2201,14 @@ template {
     -ms-grid-column: 1;
     grid-column: 1;
   }
-  .footer__input {
-    width: 100%;
+  .footer__input-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .footer__input-fild {
+    width: 100%;
     display: block;
   }
   .footer__button {
@@ -2324,6 +2340,9 @@ template {
   }
   .footer__title--inline {
     margin-bottom: 22px;
+  }
+  .footer__input-fild {
+    width: 100%;
   }
   .footer__additional {
     margin-top: 0;

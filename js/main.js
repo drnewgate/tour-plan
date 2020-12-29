@@ -54,6 +54,7 @@ var hotelSlider = new Swiper('.hotel-slider', {
 
       }
       //Обработка форм
+       $('input[type=tel]').mask('+7 (000) 000-00-00');
       $('.form').each(function(){
         $(this).validate({
         errorClass: "invalid",
