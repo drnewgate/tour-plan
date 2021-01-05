@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best Tour Plan — Hotel Booking</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&family=Nunito:wght@400;700;800&display=swap"
     rel="stylesheet" />
@@ -195,7 +196,7 @@
       <h2 class="newsletter-title newsletter-title">subscribe to our
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
-        <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
+        <form action="send.php" method="POST" class="subscribe newsletter__subscribe form">
           <input type="text" class="subscribe__input" placeholder="Your email address" 
           name="email"/>
           <button class="subscribe__button">Send</button>
@@ -288,7 +289,7 @@
     <div class="container">
       <h2 class="activities__title">Other Activities
       </h2>
-      <div class="activities-wrapper">
+      <div class="activities-wrapper" data-aos="fade-up">
         <div class="card activities__card">
           <img src="img/activity-1.jpg" alt="The curious corner
           of chamarel" class="card__image">
@@ -501,7 +502,8 @@
           class="input modal__input" 
           placeholder="Phone Number*" 
           name="phone"
-          required />
+          required
+          maxlength="15" />
           <input 
           type="email" 
           class="input modal__input" 
@@ -528,6 +530,7 @@
   <script src="js/parallax.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>  
   <script src="js/jquery.validate.min.js" ></script>
+  <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
 </body>
 

@@ -34,6 +34,12 @@ var hotelSlider = new Swiper('.hotel-slider', {
         navbarBottom.hasClass('navbar-bottom--visible')
           ? document.body.style.overflow = 'hidden'
           : document.body.style.overflow = ''
+      })
+        $('body').keyup(function(e){
+    if(e.key == 'Escape' && modal.hasClass('modal--visible')){
+      modal.removeClass('modal--visible');
+      document.body.style.overflow = ''
+    }
       });
   var modalButton = $('[data-toggle=modal]');
   var closeModalButton = $('.modal__close');
@@ -54,7 +60,7 @@ var hotelSlider = new Swiper('.hotel-slider', {
 
       }
       //Обработка форм
-       $('input[type=tel]').mask('+7 (000) 000-00-00');
+      $('input[type=tel]').mask('+7 (000) 000-00-00');
       $('.form').each(function(){
         $(this).validate({
         errorClass: "invalid",
@@ -74,4 +80,5 @@ var hotelSlider = new Swiper('.hotel-slider', {
         },
       });
     });
+    AOS.init();
   });
