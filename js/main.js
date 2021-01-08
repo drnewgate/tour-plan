@@ -35,7 +35,7 @@ var hotelSlider = new Swiper('.hotel-slider', {
           ? document.body.style.overflow = 'hidden'
           : document.body.style.overflow = ''
       })
-        $('body').keyup(function(e){
+    $('body').keyup(function(e){
     if(e.key == 'Escape' && modal.hasClass('modal--visible')){
       modal.removeClass('modal--visible');
       document.body.style.overflow = ''
@@ -70,7 +70,7 @@ var hotelSlider = new Swiper('.hotel-slider', {
           minlength: "The name must be at least 2 letters long"
         },
         email: {
-          required: "We need your email address to contact you",
+          required: "Please enter yout email",
           email: "Your email address must be in the format of name@domain.com"
         },
         phone: {
@@ -80,5 +80,6 @@ var hotelSlider = new Swiper('.hotel-slider', {
         },
       });
     });
+    
     AOS.init();
   });
