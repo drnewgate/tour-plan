@@ -58,7 +58,6 @@ img {
 
 .invalid {
   color: #EC1F46;
-  border-bottom: 1px solid #EC1F46;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -948,7 +947,6 @@ template {
   width: 350px;
   height: 55px;
   border-radius: 4px;
-  overflow: hidden;
 }
 
 .subscribe__input {
@@ -978,6 +976,13 @@ template {
   font-size: 12px;
   line-height: 15px;
   cursor: pointer;
+}
+
+.newsletter__subscribe #email-error.invalid {
+  top: 67px;
+  position: absolute;
+  font-size: 18px;
+  line-height: 18px;
 }
 
 .reviews {
