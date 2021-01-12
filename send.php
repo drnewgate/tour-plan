@@ -16,7 +16,7 @@ $body = "
 <h2>Новое обращение</h2>
 <b>Имя:</b> $name<br>
 <b>Телефон:</b> $phone<br><br>
-<b>Сообщение:</b><br>$message
+<b>Сообщение:</b>$message<br><br>
 <b>Почта:</b><br>$email
 ";
 
@@ -30,7 +30,7 @@ try {
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
+    $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
     $mail->Username   = 'simoshencko@yandex.ru'; // Логин на почте
     $mail->Password   = 'kdpmc4569'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';

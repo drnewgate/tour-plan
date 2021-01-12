@@ -11,6 +11,7 @@
   .card
     width: 230px
     height: 230px
+
 @media ( max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -64,6 +65,8 @@
     &-slider
       &__item
         max-width: 580px
+        padding-left: 72px
+        padding-right: 72px
   .activities
     padding: 60px 0 49px 0
     &-wrapper
@@ -140,12 +143,21 @@
           flex-direction: column-reverse
       &__message
         margin-bottom: 10px
+@media ( min-width: 992px )
+  button:not( .swiper-container):hover
+  button:not( .reviews-slider__button):hover
+    background: #ff6666
+    color: #ffffff
+    box-shadow: inset 0 0 0 3px #ff6666
+  a:hover
+    color: #ff6666
+    box-shadow: inset 0 0 0 0
 @media ( max-width: 767px)
   .container
     max-width: 576px
     width: 88%
   body
-    padding-top: 78px
+    padding-top: 70px
   .navbar
     &__mobile
       &__fixed
@@ -170,7 +182,7 @@
       left: 0
       right: 0
       bottom: 0
-      top: 78px
+      top: 70px
       padding-top: 30px
       &--visible
         display: block
@@ -182,9 +194,8 @@
         &--mobile
           &--visible
             display: block
-
     &-top
-      height: 80px
+      height: 70px
       padding-top: 28px
       padding-bottom: 28px
       line-height: 60px
@@ -334,6 +345,7 @@
         align-self: start
     &__message
       margin-bottom: 10px
+
 @media ( max-width: 576px )
   .logo
     width: 99px

@@ -1044,7 +1044,7 @@ template {
 
 .reviews-slider__button {
   position: absolute;
-  top: 46%;
+  top: 48%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 30px;
@@ -1060,12 +1060,12 @@ template {
 
 .reviews-slider__button--prev {
   background-image: url(../img/arrow-prev-secondary.svg);
-  left: 12px;
+  left: 9px;
 }
 
 .reviews-slider__button--next {
   background-image: url(../img/arrow-next-secondary.svg);
-  right: 12px;
+  right: 9px;
 }
 
 .reviews-slider__profile {
@@ -1673,6 +1673,8 @@ template {
   }
   .reviews-slider__item {
     max-width: 580px;
+    padding-left: 72px;
+    padding-right: 72px;
   }
   .activities {
     padding: 60px 0 49px 0;
@@ -1797,13 +1799,27 @@ template {
   }
 }
 
+@media (min-width: 992px) {
+  button:not(.reviews-slider__button):hover {
+    background: #ff6666;
+    color: #ffffff;
+    -webkit-box-shadow: inset 0 0 0 3px #ff6666;
+            box-shadow: inset 0 0 0 3px #ff6666;
+  }
+  a:hover {
+    color: #ff6666;
+    -webkit-box-shadow: inset 0 0 0 0;
+            box-shadow: inset 0 0 0 0;
+  }
+}
+
 @media (max-width: 767px) {
   .container {
     max-width: 576px;
     width: 88%;
   }
   body {
-    padding-top: 78px;
+    padding-top: 70px;
   }
   .navbar__mobile__fixed {
     position: fixed;
@@ -1836,7 +1852,7 @@ template {
     left: 0;
     right: 0;
     bottom: 0;
-    top: 78px;
+    top: 70px;
     padding-top: 30px;
   }
   .navbar-bottom--visible {
@@ -1856,7 +1872,7 @@ template {
     display: block;
   }
   .navbar-top {
-    height: 80px;
+    height: 70px;
     padding-top: 28px;
     padding-bottom: 28px;
     line-height: 60px;
